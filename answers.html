@@ -50,6 +50,67 @@
         -> Use async/await (JS)
     </h1>
 
+    <h1>
+        1. The component will not work as it does not take name as a parameter or using props.
+2. import React, { useState } from "react"
+   const [name, setName] = useState("");
+
+  
+const myComponent = ({setName("Saud")} ) => (
+  <div>Hi there! {name}</div>
+);
+
+3. this.state.message = 'Hello world'
+This is wrong because state should not be manipulated outside the constructor , correct way is : constructor(props) {
+    super(props);
+    this.state = {
+      message: 'Hello world'
+    };
+  }
+
+4. <button onclick={activateLasers}>
+It is written correct.
+
+5.  Use of turnery operator:
+condition ? ("condition is true") : ("condition is false")
+
+6. Key props is mostly used while mapping so we can identify each entity or object with its assigned key. It is commonly used in objects destructuring.
+
+const Items = todos.map((todo) =>
+  <li key={todo.id}>
+    {todo.text}
+  </li>
+);
+
+7. Refs allow us to use and access react elements easily. 
+Hooks are a feature of React JS they allows you to use state without writing a class component.
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+
+8.
+  1.RESTful API is an architectural style which uses http requests to access data and use.
+        2. var http = require('http');
+        http.createServer(function (req, res) {
+        res.write("Hello World");
+        res.end(); //end the response
+        }).listen(8080);
+        3. -> Write commits with correct conventions.
+        -> Split bigger functions into smaller ones.
+        -> Use of promises (JS)
+        -> Use async/await (JS)
+    </h1>
+
 
 
 
